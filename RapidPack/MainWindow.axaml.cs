@@ -1,4 +1,8 @@
+using System;
+using System.Linq;
 using Avalonia.Controls;
+using Avalonia.Interactivity;
+using AvaloniaApplication1.Classes;
 
 namespace RapidPack;
 
@@ -9,7 +13,6 @@ public partial class MainWindow : Window
         InitializeComponent();
     }
     
-    /*
     ParcelCalculator parcelCalculator = new ParcelCalculator();
     private void HandleCalculation(object? sender, RoutedEventArgs e)
     {
@@ -39,5 +42,5 @@ public partial class MainWindow : Window
             Console.WriteLine("Not cool!");
         }
     }
-    */
+    
 }

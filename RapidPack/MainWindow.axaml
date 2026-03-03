@@ -17,6 +17,6 @@
                         <ComboBoxItem>Ostroznie (Szklo)</ComboBoxItem>
                         <ComboBoxItem>Paleta</ComboBoxItem>
                 </ComboBox>
-                <Button Click="">Wycen</Button>
+                <Button Click="HandleCalculation">Wycen</Button>
         </StackPanel>
 </Window>

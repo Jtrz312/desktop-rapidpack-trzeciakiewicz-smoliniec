@@ -9,18 +9,11 @@ public class ParcelCalculator
         double basePrice = 10.0;
         double finalPrice;
         
-        if (parcelWidth + parcelHeight + parcelDepth > 150)
-        {
-            finalPrice = 1.5*(basePrice + parcelWeight * 2);
-        }
-        else
-        {
-            finalPrice = basePrice + parcelWeight * 2;
-        }
+        finalPrice = basePrice + parcelWeight * 2;
         
         if (express)
         {
-            finalPrice += 10;
+            finalPrice += 15;
         }
 
         if (deliveryChoice == 1)
@@ -30,6 +23,11 @@ public class ParcelCalculator
         else if (deliveryChoice == 2)
         {
             finalPrice = 100;
+        }
+        
+        if (parcelWidth + parcelHeight + parcelDepth > 150)
+        {
+            finalPrice *= 1.5;
         }
 
         Math.Floor(finalPrice);

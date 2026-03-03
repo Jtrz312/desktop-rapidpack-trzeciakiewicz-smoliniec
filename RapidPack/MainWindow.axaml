@@ -17,7 +17,7 @@
                         <ComboBoxItem>Ostroznie (Szklo)</ComboBoxItem>
                         <ComboBoxItem>Paleta</ComboBoxItem>
                 </ComboBox>
-                <Button Click="" Margin="5" Padding="20,10" HorizontalAlignment="Center">Wycen</Button>
-                <TextBlock x:Name="output" HorizontalAlignment="Center" TextWrapping="Wrap"></TextBlock>
+                <Button Click="HandleCalculation" Margin="5" Padding="20,10" HorizontalAlignment="Center">Wycen</Button>
+                <TextBlock x:Name="output" HorizontalAlignment="Center" TextWrapping="Wrap" FontWeight="Bold" FontSize="25"></TextBlock>
         </StackPanel>
 </Window>

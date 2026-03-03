@@ -2,6 +2,7 @@ using System;
 using System.Linq;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
+using Avalonia.Media;
 using AvaloniaApplication1.Classes;
 
 namespace RapidPack;
@@ -17,6 +18,7 @@ public partial class MainWindow : Window
     private void HandleCalculation(object? sender, RoutedEventArgs e)
     {
         TextBox[] textBoxes = [HeightBox, WidthBox, DepthBox, WeightBox];
+        TextBlock output = this.output;
         
         if (textBoxes.All(x => int.TryParse(x.Text, out int result)))
         {
@@ -30,16 +32,19 @@ public partial class MainWindow : Window
             if (parcelWeight <= 30)
             {
                 int parcelPrice = parcelCalculator.CalculatePrice(parcelWidth, parcelHeight, parcelDepth, parcelWeight,expressChecked, deliveryChoice);
-                Console.WriteLine(parcelPrice);
+                output.Foreground = new SolidColorBrush(Colors.Black);
+                output.Text = parcelPrice.ToString();
             }
             else
             {
-                Console.WriteLine("Waga przesyłki jest zbyt duża!");
+                output.Foreground = new SolidColorBrush(Colors.Red);
+                output.Text = "Waga przesyłki jest zbyt duża!";
             }
         }
         else
         {
-            Console.WriteLine("Not cool!");
+            output.Foreground = new SolidColorBrush(Colors.Red);
+            output.Text = "Podano nieprawidłowe/niepełne dane!";
         }
     }
     

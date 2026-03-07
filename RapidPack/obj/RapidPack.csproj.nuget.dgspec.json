@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "/home/mik/RiderProjects/desktop-rapidpack-trzeciakiewicz-smoliniec/RapidPack/RapidPack.csproj": {}
+    "C:\\Users\\SLC\\RiderProjects\\desktop-rapidpack-trzeciakiewicz-smoliniec2\\RapidPack\\RapidPack.csproj": {}
   },
   "projects": {
-    "/home/mik/RiderProjects/desktop-rapidpack-trzeciakiewicz-smoliniec/RapidPack/RapidPack.csproj": {
+    "C:\\Users\\SLC\\RiderProjects\\desktop-rapidpack-trzeciakiewicz-smoliniec2\\RapidPack\\RapidPack.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/mik/RiderProjects/desktop-rapidpack-trzeciakiewicz-smoliniec/RapidPack/RapidPack.csproj",
+        "projectUniqueName": "C:\\Users\\SLC\\RiderProjects\\desktop-rapidpack-trzeciakiewicz-smoliniec2\\RapidPack\\RapidPack.csproj",
         "projectName": "RapidPack",
-        "projectPath": "/home/mik/RiderProjects/desktop-rapidpack-trzeciakiewicz-smoliniec/RapidPack/RapidPack.csproj",
-        "packagesPath": "/home/mik/.nuget/packages/",
-        "outputPath": "/home/mik/RiderProjects/desktop-rapidpack-trzeciakiewicz-smoliniec/RapidPack/obj/",
+        "projectPath": "C:\\Users\\SLC\\RiderProjects\\desktop-rapidpack-trzeciakiewicz-smoliniec2\\RapidPack\\RapidPack.csproj",
+        "packagesPath": "C:\\Users\\SLC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SLC\\RiderProjects\\desktop-rapidpack-trzeciakiewicz-smoliniec2\\RapidPack\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/mik/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\SLC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -81,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/mik/.dotnet/sdk/10.0.102/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Users\\SLC\\.dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

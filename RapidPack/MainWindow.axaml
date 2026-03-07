@@ -4,6 +4,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="RapidPack.MainWindow"
-        Title="RapidPack">
-    Welcome to Avalonia!
+        Title="RapidPack" Background="Bisque">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top">
+                <TextBlock FontSize="50" Padding="10" FontWeight="Medium" HorizontalAlignment="Center">NADAJ PACZKE</TextBlock>
+                <TextBox x:Name="HeightBox" Watermark="Wysokosc" Margin="5" Width="200"/>
+                <TextBox x:Name="WidthBox" Watermark="Szerokosc" Margin="5" Width="200"/>
+                <TextBox x:Name="DepthBox" Watermark="Glebokosc" Margin="5" Width="200"/>
+                <TextBox x:Name="WeightBox" Watermark="Waga" Margin="5" Width="200"/>
+                <CheckBox x:Name="ExpressBox" Margin="10" HorizontalAlignment="Center">Expres (+15zl)</CheckBox>
+                <ComboBox x:Name="DeliveryBox" Margin="5" SelectedIndex="0" HorizontalAlignment="Center">
+                        <ComboBoxItem>Standardowa</ComboBoxItem>
+                        <ComboBoxItem>Ostroznie (Szklo)</ComboBoxItem>
+                        <ComboBoxItem>Paleta</ComboBoxItem>
+                </ComboBox>
+                <Button x:Name="Submit" Click="HandleCalculation" Margin="5" Padding="20,10" HorizontalAlignment="Center">Wycen</Button>
+                <TextBlock x:Name="output" HorizontalAlignment="Center" TextWrapping="Wrap" FontWeight="Bold" FontSize="25"></TextBlock>
+        </StackPanel>
 </Window>
